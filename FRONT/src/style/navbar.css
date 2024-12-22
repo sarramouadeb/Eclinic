@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap');
+
+
+
+a:hover {
+  text-decoration: none;
+}
+
+/*E-clinic*/
+pre{
+  font-family: 'Cormorant' !important ;  
+  font-style: italic !important;
+}
+ 
+.eclinic-logo {
+  font-size: 50px;
+  color: black;
+  font-weight: bold;
+  padding-left: 20px;
+  font-weight: 550 !important;
+  font-style: italic !important;
+  margin-left: 20px; /* Align it to the left */
+  margin-top: 30px !important; /* Push it lower from the navbar */
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  font-weight: bold !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%; /* Ensure the form doesn't exceed the container width */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent horizontal and vertical overflow */
+}
+
+/* elements of the navbar */
+.navHeader {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 900 !important;
+}
+
+.navHeader a:hover { 
+  color:#493971; /* Bootstrap primary color for hover effect */
+}
+
+
+.links {
+  text-decoration: none;
+  color: black;
+  color: #493971;
+  font-weight: 800 !important;
+}
+nav{
+  font-weight: bold !important;
+  font-family: 'arial', serif !important ;
+  font-size: 1.4rem !important;
+  font-style: italic !important;
+ 
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  nav {
+    font-size: 0.5 rem;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 862px) {
+  nav {
+    font-size: 0.5rem;
+    height: 45vh;
+  }
+}
+
+@media only screen and (max-width: 507px) {
+  nav {
+    font-size: 0.5rem;
+    height: 30vh;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  nav {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 293px) {
+  nav {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 273px) {
+  nav {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 245px) {
+  nav {
+    font-size: 0.5rem;
+  }
+}

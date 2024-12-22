@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  width: 100%;
+  height: 100%;
+  font-family: Arial, serif !important; 
+}
+body {
+  background: linear-gradient(to left, #85c8fb, #ddf4ff);
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  outline: 5px solid red; /* Debug outline */
+  overflow: hidden;
+  font-family: Arial, serif !important; 
+}
+
+.container {
+  max-width: 100%;
+  overflow: hidden; /* Ensure no content overflows */
+  display: flex;
+  flex-wrap: wrap; /* Ensure content wraps */
+}
+
+h1, h2, h3, h4, h5, h6, label, span {
+  font-weight: 500;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password, .forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signup-container {
+  display: flex;
+  height: 100vh;
+}
+
+.welcome-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+
+.welcome-icon img{
+  height: 350px ;
+  width: 350px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  margin-left: -20px;
+  padding-top: -10px;
+  color: rgba(4, 45, 110, 0.79);
+  font-family: 'Salsa', serif !important;  
+}
+
+/* Right Section */
+.form-section {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-left: 150px;
+  margin-top: 70px;
+  margin-right: -40px;
+  background: rgba(246, 247, 249, 0.815);
+  height: 80vh; /* Adjusted height to avoid vertical scroll */
+  overflow-y: hidden; /* Disable vertical scroll */
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+}
+/*form container*/
+.custom-form {
+  margin-right: 0 !important;
+  width: 1000px;
+  max-width: 100%;
+  background-color: transparent !important;
+  
+}
+
+.welcome-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-section .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form spacing */
+.form-control {
+  height: 10px !important;
+  font-size: 15px !important; 
+  border-radius: 8px; 
+   width: 100%; /* Ensure input fields take full width */
+  margin-bottom: 20px; 
+  padding: 10px 15px;
+  font-family: 'Arial', serif !important;  
+}
+
+.custom-radio-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.custom-form .d-flex {
+  margin-bottom:30px;
+}
+
+.custom-form .d-grid {
+  margin-top: 0px;
+}
+
+/* Radio Buttons */
+.custom-radio-group {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', serif !important;  
+}
+
+.custom-radio-group .female {
+  margin-left: 40px !important;
+}
+
+.custom-radio-group .male {
+  margin-right: 60px;
+}
+
+.custom-radio-group input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: rgb(237, 227, 227);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-left: 40px;
+}
+
+.male {
+  margin-right: 100px;
+}
+
+.custom-radio-group input[type="radio"]::before {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-radio-group input[type="radio"]:checked::before {
+  background-color: #090909;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio-group input[type="radio"] + label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.custom-radio-group input[type="radio"]:hover {
+  border-color: #080909;
+}
+
+/* Mauve Button */
+.btn-mauve {
+  background-color: #493971 !important;
+  color: rgba(255, 255, 255, 0.718) !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 200px;
+}
+
+.btn-mauve:hover {
+  background-color: #493971 !important;
+}
+
+.negative-margin {
+  margin-left: -6px;
+  font-family: 'Arial', serif !important;  
+  color: #493971 !important;
+}
+
+/*Already have an account?*/
+.login{
+  text-decoration: none;
+  color:#493971 ;
+  margin-left: 30px;
+  margin-top: -40px;
+}
+.login:hover {
+  color: rgb(30, 10, 48);
+}
+
+/* Add margin between form groups */
+.custom-form .row {
+  margin-bottom: 1rem;
+}
+
+.text-center  {
+  margin-bottom: 3.5rem;
+  font-family: 'Crimson Pro', serif !important; 
+  font-weight: 900 !important;
+  color: #85c8fb;
+  font-style: italic !important;
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* Gender radio buttons */
+.button-group-container {
+  display: flex;
+  position: absolute;
+  margin-left: 350px !important;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  z-index: 10;
+}
+
+.button-cell {
+  width: 100%;
+  padding: 2px 25px;
+  background-color:#493971 ;
+  font-size: 1.1rem;
+  border: 1px solid  #493971 !important;
+  text-align: center;
+  cursor: pointer;
+  transition: #493971  0.3s, color 0.3s;
+  user-select: none;
+  color:#fff;
+}
+
+.register{
+  margin-top: -50px;
+  margin-right: 30px;
+  
+  color: #fff;
+}
+
+.button-cell:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.button-cell:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.button-cell.active {
+  background-color:#493971 !important;
+  color: white;
+}
+
+.return{
+  width: 100px;
+  margin-top: -50px;
+  margin-right: 30px;
+  
+  color: #fff;
+}
+.btn-gris{
+  background-color: #0f0e113a !important;
+  color: rgb(0, 0, 0) !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: -0px;
+}

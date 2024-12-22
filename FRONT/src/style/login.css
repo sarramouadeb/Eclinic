@@ -1,0 +1,157 @@
+/* Form and its children */
+.custom-form1,
+.custom-form1 * {
+  font-style: normal; /* Set font style to normal */
+}
+
+.custom-form1 {
+  background: hwb(90 95% 4% / 0.915); /* Light gray background for the form */
+  border-radius: 100px; /* Rounded edges */
+  width: 700px !important; /* Width of the form */
+  max-height: 900px; /* Maximum height of the form */
+  padding: 50px; /* Padding inside the form */
+  margin: 0 auto; /* Center the form horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2; /* Ensure form is above other elements */
+  transform: translate(-50%, -50%); /* Center the form vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Heading styles */
+.custom-form1 h3 {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  color: rgb(79, 4, 150); /* Matches the purple theme */
+  font-weight: bold;
+  margin-bottom: 30px; /* Space below heading */
+  text-align: center; /* Center the heading */
+}
+
+/* Input fields */
+.custom-form1 input[type="email"],
+.custom-form1 input[type="password"] {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding: 15px; /* Padding inside input fields */
+  padding-top: 20px;
+  font-size: 0.8rem;
+  width: 100%; /* Full width of input fields */
+  margin-bottom: 0.5px; /* Space between input fields */
+  outline: none;
+  box-shadow: none;
+  margin-left: 20px;
+  position: relative; /* Ensure the input remains properly positioned */
+  z-index: 2; /* Make input fields appear above all other elements */
+}
+
+.custom-form1 input:focus {
+  border-color: rgb(79, 4, 150); /* Purple border on focus */
+  box-shadow: 0 0 5px rgba(79, 4, 150, 0.5); /* Subtle purple glow */
+}
+
+/* Buttons */
+.custom-form1 .btn-mauve1 {
+  background-color: rgb(79, 4, 150);
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px; /* Padding for the button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px; /* Space above the button */
+  width: 150px; /* Full width of the button */
+  margin-left: 250px !important;
+}
+
+.custom-form1 .btn-mauve1:hover {
+  background-color: rgb(105, 43, 189);
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Forget password and sign-up links */
+.custom-form1 {
+  font-size: 0.9rem;
+  color: rgb(79, 4, 150);
+  padding-right: 70px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.negative-margin2 {
+  font-size: 0.9rem;
+  color: rgb(79, 4, 150);
+  padding-right: -80px;
+  padding-top: 0px;
+  margin-left: 60px;
+}
+
+.negative-margin1 {
+  font-size: 0.9rem;
+  color: rgb(79, 4, 150);
+  padding-right: 0px;
+  margin-left: -120px;
+  padding-top: -20px;
+}
+
+.custom-form1 .negative-margin1 a,
+.custom-form1 .negative-margin2 a {
+  text-decoration: none;
+  color: rgb(79, 4, 150);
+}
+
+.custom-form1 .negative-margin1 a:hover,
+.custom-form1 .negative-margin2 a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons container */
+.button1 {
+  display: flex;
+  position: absolute;
+  margin-left: 800px !important;
+  transform: translateX(-50%);
+  margin-top: 560px !important;
+  z-index: 10; /* Ensure it does not interfere with the form */
+}
+
+/* Button styles */
+.button-cell1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  padding: 2px 25px;
+  background-color: #493971;
+  font-size: 1.1rem;
+  border: 1px solid #493971 !important;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  user-select: none;
+  color: #fff;
+}
+
+.button-cell1:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.button-cell1:last-child {
+  border-radius: 0 25px 25px 0;
+}
+
+.button-cell1.active {
+  background-color: #493971 !important;
+  color: white;
+}
+
+/* Welcome icon */
+.welcome-icon1 img {
+  margin-left: 1100px;
+  margin-top: 10px;
+  width: 310px !important;
+  transform: translateX(-50%);
+  z-index: 1 !important; /* Ensure it does not overlap the form */
+}
