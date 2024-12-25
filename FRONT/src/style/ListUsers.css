@@ -45,8 +45,85 @@ body {
   }
   
   .radio-buttons input[type="radio"] {
-    margin-right: 10px;
+    appearance: none; /* Remove the default radio button style */
+    width: 8px;
+    height: 8px;
+   
+    border-radius: 50%; /* Make it circular */
+    background-color: rgb(141, 136, 136); /* Set the background to white */
+    cursor: pointer;
+    position: relative;
   }
+  
+  .radio-buttons input[type="radio"]:checked {
+    background-color: #212122e4; /* Blue color for checked state */
+  }
+  
+  .radio-buttons input[type="radio"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle hover effect */
+  }
+  
+  /* Custom styling for checkboxes in the first column of the table */
+.user-table-container input[type="checkbox"] {
+  appearance: none; /* Remove the default checkbox styling */
+  width: 20px; /* Set custom size */
+  height: 20px;
+  border: 2px solid #585a5de4; /* Add a border with your theme color */
+  border-radius: 4px; /* Slightly rounded corners */
+  background-color: white; /* Default background */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.user-table-container input[type="checkbox"]:checked {
+  background-color: #ffffffe4; /* Theme color for checked state */
+  border-color: #5d5e60e4; /* Match border color with background */
+  position: relative;
+}
+
+.user-table-container input[type="checkbox"]:checked::after {
+  content: "✔"; /* Checkmark */
+  color: rgb(15, 15, 15); /* Checkmark color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Hover effect for checkboxes */
+.user-table-container input[type="checkbox"]:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Subtle glow on hover */
+}
+
   
   /* Main Content Styling */
   .main-content {
@@ -60,9 +137,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #f8f9fa; /* Matches Bootstrap's bg-light */
     border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   }
   
   .logo-img {
@@ -89,14 +167,59 @@ body {
     cursor: pointer;
   }
   
+
+  
+  /*add user*/
   .add-user-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 20px;
-  }
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center the buttons vertically */
+    gap: 15px; /* Add space between buttons */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+
+.add-user-container .btn {
+    background-color: white; /* White background */
+    color: rgb(58, 235, 58); /* Green text */
+    border: 2px solid rgb(80, 233, 80); /* Green border */
+    padding: 10px 20px; /* Adjust padding for consistent button size */
+    border-radius: 5px; /* Add slight rounding for aesthetics */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transitions */
+}
+
+.add-user-container .btn:hover {
+    background-color: rgb(54, 215, 54); /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Add specific styling for the Delete User button */
+.add-user-container .btn-delete {
+  color: rgb(249, 6, 6); /* White text */
+  border: 2px solid rgb(255, 87, 87); /* Match border with background */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-user-container .btn-delete:hover {
+  background-color: rgb(204, 0, 0); /* Darker red on hover */
+}
+
+/* Add specific styling for the Print button */
+.add-user-container .btn-print {
+  color: rgb(82, 80, 80); /* White text */
+  border: 2px solid rgb(81, 83, 86); /* Match border with background */
+  transition: background-color 0.3s, color 0.3s;
+  padding-left: 0px;
+}
+
+.add-user-container .btn-print:hover {
+  background-color: rgb(75, 76, 78); /* Darker blue on hover */
+}
+
   
   .add-user-btn {
-    background-color: #007bff;
+    background-color: #0d0d0d;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -105,7 +228,7 @@ body {
   }
   
   .add-user-btn:hover {
-    background-color: #0056b3; /* Darker shade of Bootstrap primary */
+    background-color: #ecf4fc; /* Darker shade of Bootstrap primary */
   }
   
   /* User Table Styling */
@@ -120,12 +243,14 @@ body {
     background-color: #fff;
   }
   
-  .user-table th,
-  .user-table td {
-    padding: 15px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
+.user-table th,
+.user-table td {
+  padding: 15px;
+  text-align: center; /* Centers content horizontally */
+  vertical-align: middle; /* Centers content vertically */
+  border: 1px solid #ddd;
+}
+
   
   .user-table th {
     background-color: #f8f9fa; /* Matches Bootstrap table-light */
